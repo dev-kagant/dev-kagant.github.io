@@ -157,21 +157,21 @@
 						return;
 
 					// Cancel original event.
-					// 	event.preventDefault();
-					// 	event.stopPropagation();
+					event.preventDefault();
+					event.stopPropagation();
 
-					// // Hide panel.
-					// 	$this._hide();
+					// Hide panel.
+					$this._hide();
 
-					// // Redirect to href.
-					// 	window.setTimeout(function() {
+					// Redirect to href.
+					window.setTimeout(function () {
 
-					// 		if (target == '_blank')
-					// 			window.open(href);
-					// 		else
-					// 			window.location.href = href;
+						if (target == '_blank')
+							window.open(href);
+						else
+							window.location.href = href;
 
-					// 	}, config.delay + 10);
+					}, config.delay + 10);
 
 				});
 
